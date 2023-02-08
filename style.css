@@ -1,0 +1,133 @@
+    @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap");
+
+    * {
+      margin: 0
+    }
+    img {
+        margin-top: 10%;
+        width: 30%;
+        height: 35%;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
+      background-image: url('bgimage.jpg');
+      background-size: cover;
+      height: 100vh;
+      font-family: sans-serif;
+    }
+
+    .app {
+      width: 30%;
+    }
+
+    @media (max-width:768px) {
+      .app {
+        width: 90%;
+      }
+    }
+
+    .app h1 {
+      color: #f4cce1;
+      font-size: 40px;
+      padding: 10px 0;
+      text-align: center;
+      border-radius: .5rem .5rem 0 0;
+      background-color: #0a0009;
+      font-family: "Rajdhani", sans-serif;
+      border-left: 2px solid #00030f;
+      border-right: 2px solid #000105;
+      text-shadow: 0 0 7px #02d9ff;
+    }
+
+    .app form {
+      display: flex;
+      width: 100%;
+      background-color: #1d1d48;
+
+    }
+
+    .app form input {
+      border: none;
+      background-color: #3b0224;
+      font-size: 16px;
+      color: #75c4e5;
+      padding: 10px;
+      width: 90%;
+      border-left: 2px solid #00051b;
+    }
+
+    .app form button {
+      border: none;
+      color: white;
+      background-color: #af1549;
+      font-size: 25px;
+      font-weight: 600;
+      height: 42px;
+      width: 16%;
+      border-right: 2px solid #000107;
+    }
+
+    .app ul {
+      list-style: none;
+      color: #fff9c7; /*f7dd04*/
+      padding: 0;
+    }
+
+    .app ul li {
+      padding: 10px;
+      background-color: #4c371e;
+      border-bottom: 2px solid #000000;
+      border-left: 2px solid #000105;
+      border-right: 2px solid #00020a;
+    }
+
+
+    .check {
+      width: 0.8em;
+      height: 0.8em;
+      cursor: pointer;
+      border-radius: 50%;
+      background-color: white;
+      border: 1px solid rgb(255, 255, 255);
+    }
+
+    .check:checked {
+      background-color: #fae852;
+    }
+
+    .song {
+      font-size: 16px;
+      padding: 0 10px;
+      width: fit-content;
+      background: transparent;
+      border: none;
+      color: #fff9c7;
+      text-shadow: 0 0 3px #fae852;
+    }
+
+    .song:focus {
+      outline: none;
+    }
+
+    .app ul li i {
+      float: right;
+      cursor: pointer;
+      padding-right: 16px;
+    }
+
+    .app ul li i:hover {
+      color: #fce900; /*fff9c7*/
+    }
+
+    ::placeholder {
+        font-size: 15px;
+        color: #ffffff;
+        opacity: 0.6;
+    }
+    .completed {
+      color: rgba(192, 192, 192, 0.8);
+      text-decoration: line-through;
+    }
